@@ -9,25 +9,36 @@
       
       
       
-        <link rel="prev" href="../models/litellm/">
+        <link rel="prev" href="../quickstart/">
       
       
-        <link rel="next" href="../visualization/">
+        <link rel="next" href="../agents/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+          <link rel="alternate" href="../ja/config/" hreflang="ja">
+        
+          <link rel="alternate" href="../ko/config/" hreflang="ko">
+        
+          <link rel="alternate" href="../zh/config/" hreflang="zh">
+        
       
       
       <link rel="icon" href="../images/favicon-platform.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
-        <title>Configuring the SDK - OpenAI Agents SDK</title>
+        <title>Configuration - OpenAI Agents SDK</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -56,7 +67,6 @@
 
     
     
-    
   </head>
   
   
@@ -74,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuring-the-sdk" class="md-skip">
+        <a href="#configuration" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuring the SDK
+              Configuration
             
           </span>
         </div>
@@ -138,6 +148,18 @@
           <li class="md-select__item">
             <a href="../ja/config/" hreflang="ja" class="md-select__link">
               日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../ko/config/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../zh/config/" hreflang="zh" class="md-select__link">
+              简体中文
             </a>
           </li>
         
@@ -192,7 +214,7 @@
         <a href="https://github.com/openai/openai-agents-python" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     openai-agents-python
@@ -237,7 +259,7 @@
       <a href="https://github.com/openai/openai-agents-python" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     openai-agents-python
@@ -259,9 +281,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Intro
+  
+
     
   </span>
+  
   
 
       </a>
@@ -281,9 +308,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Quickstart
+  
+
     
   </span>
+  
   
 
       </a>
@@ -293,491 +325,6 @@
     
       
       
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../examples/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Examples
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    Documentation
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
-            <span class="md-nav__icon md-icon"></span>
-            Documentation
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../agents/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Agents
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../running_agents/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Running agents
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sessions/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Sessions
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../results/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Results
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../streaming/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Streaming
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../repl/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    REPL utility
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Tools
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mcp/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Model context protocol (MCP)
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../handoffs/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Handoffs
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tracing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Tracing
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../context/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Context management
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../guardrails/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Guardrails
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../multi_agent/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Orchestrating multiple agents
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../usage/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Usage
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_15" >
-        
-          
-          <label class="md-nav__link" for="__nav_4_15" id="__nav_4_15_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Models
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_15">
-            <span class="md-nav__icon md-icon"></span>
-            Models
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../models/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Models
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../models/litellm/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Using any model via LiteLLM
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
   
   
     
@@ -797,9 +344,14 @@
   
   
   <span class="md-ellipsis">
-    Configuring the SDK
+    
+  
+    Configuration
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -810,9 +362,14 @@
   
   
   <span class="md-ellipsis">
-    Configuring the SDK
+    
+  
+    Configuration
+  
+
     
   </span>
+  
   
 
       </a>
@@ -833,9 +390,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#configuration-objects-and-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration objects and dictionaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#api-keys-and-clients" class="md-nav__link">
     <span class="md-ellipsis">
-      API keys and clients
+      
+        API keys and clients
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API keys and clients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-http-clients-with-openai-v3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom HTTP clients with openai v3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openai-provider-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI provider defaults
+      
     </span>
   </a>
   
@@ -844,7 +442,9 @@
         <li class="md-nav__item">
   <a href="#tracing" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracing
+      
+        Tracing
+      
     </span>
   </a>
   
@@ -853,7 +453,9 @@
         <li class="md-nav__item">
   <a href="#debug-logging" class="md-nav__link">
     <span class="md-ellipsis">
-      Debug logging
+      
+        Debug logging
+      
     </span>
   </a>
   
@@ -861,9 +463,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sensitive-data-in-logs" class="md-nav__link">
+  <a href="#sensitive-data-in-logs-and-diagnostics" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensitive data in logs
+      
+        Sensitive data in logs and diagnostics
+      
     </span>
   </a>
   
@@ -881,7 +485,58 @@
     </li>
   
 
-              
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -890,37 +545,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../visualization/" class="md-nav__link">
+      <a href="../agents/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Agent Visualization
+    
+  
+    Agents
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../release/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Release process/changelog
-    
-  </span>
   
 
       </a>
@@ -946,28 +583,35 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_19" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_19" id="__nav_4_19_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
-    Voice agents
+    
+  
+    Sandbox agents
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_19_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_19">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
             <span class="md-nav__icon md-icon"></span>
-            Voice agents
+            
+  
+    Sandbox agents
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -978,14 +622,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../voice/quickstart/" class="md-nav__link">
+      <a href="../sandbox_agents/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Quickstart
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1001,14 +650,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../voice/pipeline/" class="md-nav__link">
+      <a href="../sandbox/guide/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Pipelines and workflows
+    
+  
+    Concepts
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1024,14 +678,75 @@
   
   
     <li class="md-nav__item">
-      <a href="../voice/tracing/" class="md-nav__link">
+      <a href="../sandbox/clients/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Tracing
+    
+  
+    Sandbox clients
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sandbox/custom-providers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Build a sandbox provider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sandbox/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent memory
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1065,28 +780,35 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_20" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
         
           
-          <label class="md-nav__link" for="__nav_4_20" id="__nav_4_20_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
             
   
   
   <span class="md-ellipsis">
+    
+  
     Realtime agents
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_20_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_20">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
-            Realtime agents
+            
+  
+    Realtime agents
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1102,9 +824,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Quickstart
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../realtime/transport/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transport
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1125,9 +880,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Guide
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1139,6 +899,792 @@
           </ul>
         </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Voice agents
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Voice agents
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voice/quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quickstart
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voice/pipeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pipeline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voice/tracing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tracing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tools
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guardrails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../running_agents/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running agents
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../streaming/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Streaming
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../multi_agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent orchestration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../handoffs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handoffs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_in_the_loop/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Human-in-the-loop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_14" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_14" id="__nav_4_14_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sessions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sessions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/sqlalchemy_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLAlchemy session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/advanced_sqlite_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced SQLite session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sessions/encrypted_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Encrypted session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../context/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Context management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usage
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mcp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Model context protocol (MCP)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tracing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tracing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../visualization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Agent visualization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../repl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REPL utility
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../release/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Release process/changelog
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1171,9 +1717,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
@@ -1181,9 +1725,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     API Reference
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1192,7 +1741,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            API Reference
+            
+  
+    API Reference
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1213,9 +1766,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
         
           
           <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
@@ -1223,9 +1774,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Agents
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1234,7 +1790,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_1">
             <span class="md-nav__icon md-icon"></span>
-            Agents
+            
+  
+    Agents
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1250,9 +1810,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Agents module
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1273,9 +1838,14 @@
   
   
   <span class="md-ellipsis">
-    Agents
+    
+  
+    Agent
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1296,9 +1866,772 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Runner
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/run_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Run config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/run_state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Run state
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_7" id="__nav_5_1_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sandbox
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sandbox
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/sandbox_agent/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SandboxAgent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/manifest/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manifest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/permissions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permissions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/snapshot/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SnapshotSpec
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/entries/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Workspace entries
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1_7_7" id="__nav_5_1_7_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capabilities
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Capabilities
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/capabilities/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capabilities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/capability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Capability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/filesystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filesystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/shell/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Shell
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/memory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Memory
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Skills
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/capabilities/compaction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Compaction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/session/sandbox_client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sandbox clients
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/session/sandbox_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SandboxSession
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/session/sandbox_session_state/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SandboxSessionState
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/sandboxes/unix_local/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Unix local sandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/sandbox/sandboxes/docker/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Docker sandbox
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/responses_websocket_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Responses WebSocket session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/run_error_handlers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Run error handlers
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1319,9 +2652,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Memory
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1342,9 +2680,14 @@
   
   
   <span class="md-ellipsis">
-    repl
+    
+  
+    REPL
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1365,9 +2708,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tools
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/decorators/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decorators
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1388,9 +2764,14 @@
   
   
   <span class="md-ellipsis">
-    Tool Context
+    
+  
+    Tool context
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1411,9 +2792,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Results
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1434,9 +2820,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Streaming events
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1457,9 +2848,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Handoffs
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1480,9 +2876,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Lifecycle
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1503,9 +2904,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Items
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1526,32 +2932,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Run context
+  
+
     
   </span>
   
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../ref/tool_context/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Tool Context
-    
-  </span>
   
 
       </a>
@@ -1572,9 +2960,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Usage
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1595,9 +2988,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Exceptions
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1618,9 +3016,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Guardrails
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Prompts
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1641,9 +3072,98 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Model settings
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/strict_schema/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strict schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/tool_guardrails/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool guardrails
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/computer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1664,9 +3184,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Agent output
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1687,9 +3212,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Function schema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1710,9 +3240,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Model interface
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1733,9 +3268,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     OpenAI Chat Completions model
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1756,9 +3296,70 @@
   
   
   <span class="md-ellipsis">
+    
+  
     OpenAI Responses model
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/models/openai_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OpenAI provider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/models/multi_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Multi provider
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1779,9 +3380,14 @@
   
   
   <span class="md-ellipsis">
-    MCP Servers
+    
+  
+    MCP servers
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1802,9 +3408,42 @@
   
   
   <span class="md-ellipsis">
-    MCP Util
+    
+  
+    MCP util
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/mcp/manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MCP manager
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1838,9 +3477,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
         
           
           <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
@@ -1848,9 +3485,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tracing
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -1859,7 +3501,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_2">
             <span class="md-nav__icon md-icon"></span>
-            Tracing
+            
+  
+    Tracing
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1875,9 +3521,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Tracing module
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1898,9 +3549,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Creating traces/spans
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1921,9 +3577,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Traces
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1944,9 +3605,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Spans
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1967,9 +3633,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Processor interface
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1990,9 +3661,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Processors
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2013,9 +3689,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Scope
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2036,9 +3717,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Setup
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2059,9 +3745,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Span data
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2082,9 +3773,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Util
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2118,9 +3814,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
         
           
           <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
@@ -2128,9 +3822,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Realtime
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2139,7 +3838,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_3">
             <span class="md-nav__icon md-icon"></span>
-            Realtime
+            
+  
+    Realtime
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2155,9 +3858,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     RealtimeAgent
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2178,9 +3886,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     RealtimeRunner
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2201,9 +3914,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     RealtimeSession
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2224,9 +3942,14 @@
   
   
   <span class="md-ellipsis">
-    Realtime Events
+    
+  
+    Events
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2247,9 +3970,14 @@
   
   
   <span class="md-ellipsis">
-    Realtime Configuration
+    
+  
+    Configuration
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2270,9 +3998,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Model
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/realtime/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2306,9 +4067,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
           <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
@@ -2316,9 +4075,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Voice
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2327,7 +4091,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_4">
             <span class="md-nav__icon md-icon"></span>
-            Voice
+            
+  
+    Voice
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2343,9 +4111,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Pipeline
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2366,9 +4139,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Workflow
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2389,9 +4167,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Input
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2412,9 +4195,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Result
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2435,9 +4223,14 @@
   
   
   <span class="md-ellipsis">
-    Pipeline Config
+    
+  
+    Pipeline config
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2458,9 +4251,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Events
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2481,9 +4279,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Exceptions
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2504,9 +4307,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Model
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2527,9 +4335,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Utils
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2550,9 +4363,14 @@
   
   
   <span class="md-ellipsis">
-    OpenAIVoiceModelProvider
+    
+  
+    OpenAI voice model provider
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2573,9 +4391,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     OpenAI STT
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2596,9 +4419,42 @@
   
   
   <span class="md-ellipsis">
+    
+  
     OpenAI TTS
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/voice/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2632,9 +4488,7 @@
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
         
           
           <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
@@ -2642,9 +4496,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Extensions
+  
+
     
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -2653,7 +4512,11 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
-            Extensions
+            
+  
+    Extensions
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -2669,9 +4532,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Handoff filters
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2692,9 +4560,91 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Handoff prompt
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5_3" id="__nav_5_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Third-party adapters
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Third-party adapters
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/models/any_llm_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Any-LLM model
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2710,14 +4660,111 @@
   
   
     <li class="md-nav__item">
-      <a href="../ref/extensions/litellm/" class="md-nav__link">
+      <a href="../ref/extensions/models/any_llm_provider/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    LiteLLM Models
+    
+  
+    Any-LLM provider
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/models/litellm_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiteLLM model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/models/litellm_provider/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LiteLLM provider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/tool_output_trimmer/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tool output trimmer
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2738,9 +4785,182 @@
   
   
   <span class="md-ellipsis">
+    
+  
     SQLAlchemySession
+  
+
     
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/memory/async_sqlite_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Async SQLite session
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/memory/redis_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RedisSession
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/memory/mongodb_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MongoDBSession
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/memory/dapr_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DaprSession
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/memory/encrypt_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EncryptedSession
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ref/extensions/memory/advanced_sqlite_session/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AdvancedSQLiteSession
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -2791,9 +5011,50 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#configuration-objects-and-dictionaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuration objects and dictionaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#api-keys-and-clients" class="md-nav__link">
     <span class="md-ellipsis">
-      API keys and clients
+      
+        API keys and clients
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="API keys and clients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-http-clients-with-openai-v3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom HTTP clients with openai v3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#openai-provider-defaults" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenAI provider defaults
+      
     </span>
   </a>
   
@@ -2802,7 +5063,9 @@
         <li class="md-nav__item">
   <a href="#tracing" class="md-nav__link">
     <span class="md-ellipsis">
-      Tracing
+      
+        Tracing
+      
     </span>
   </a>
   
@@ -2811,7 +5074,9 @@
         <li class="md-nav__item">
   <a href="#debug-logging" class="md-nav__link">
     <span class="md-ellipsis">
-      Debug logging
+      
+        Debug logging
+      
     </span>
   </a>
   
@@ -2819,9 +5084,11 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sensitive-data-in-logs" class="md-nav__link">
+  <a href="#sensitive-data-in-logs-and-diagnostics" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensitive data in logs
+      
+        Sensitive data in logs and diagnostics
+      
     </span>
   </a>
   
@@ -2842,6 +5109,15 @@
           
           
             <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -2851,67 +5127,183 @@
   
 
 
-<h1 id="configuring-the-sdk">Configuring the SDK</h1>
-<h2 id="api-keys-and-clients">API keys and clients</h2>
-<p>By default, the SDK looks for the <code>OPENAI_API_KEY</code> environment variable for LLM requests and tracing, as soon as it is imported. If you are unable to set that environment variable before your app starts, you can use the <a class="autorefs autorefs-internal" title="set_default_openai_key" href="../ref/#agents.set_default_openai_key">set_default_openai_key()</a> function to set the key.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_key</span>
+<h1 id="configuration">Configuration</h1>
+<p>This page covers SDK-wide defaults that you usually set once during application startup, such as the default OpenAI key or client, the default OpenAI API shape, tracing export defaults, and logging behavior.</p>
+<p>These defaults still apply to sandbox-based workflows, but sandbox workspaces, sandbox clients, and session reuse are configured separately.</p>
+<p>If you need to configure a specific agent or run instead, start with:</p>
+<ul>
+<li><a href="../agents/">Agents</a> for instructions, tools, output types, handoffs, and guardrails on a plain <code>Agent</code>.</li>
+<li><a href="../running_agents/">Running agents</a> for <code>RunConfig</code>, sessions, and conversation-state options.</li>
+<li><a href="../sandbox/guide/">Sandbox agents</a> for <code>SandboxRunConfig</code>, manifests, capabilities, and sandbox-client-specific workspace setup.</li>
+<li><a href="../models/">Models</a> for model selection and provider configuration.</li>
+<li><a href="../tracing/">Tracing</a> for per-run tracing metadata and custom trace processors.</li>
+</ul>
+<h2 id="configuration-objects-and-dictionaries">Configuration objects and dictionaries</h2>
+<p>Configuration parameters defined by the SDK generally accept either their typed settings object or a dictionary containing the same fields. This applies across agent, run, model, session, sandbox, and voice configuration boundaries whose type annotations include a dictionary. Nested settings types defined by the SDK can also use dictionaries.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">Agent</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">set_default_openai_key</span><span class="p">(</span><span class="s2">&quot;sk-...&quot;</span><span class="p">)</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">agent</span> <span class="o">=</span> <span class="n">Agent</span><span class="p">(</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">name</span><span class="o">=</span><span class="s2">&quot;Assistant&quot;</span><span class="p">,</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-5.6-sol&quot;</span><span class="p">,</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">model_settings</span><span class="o">=</span><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>        <span class="s2">&quot;reasoning&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;effort&quot;</span><span class="p">:</span> <span class="s2">&quot;high&quot;</span><span class="p">},</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>        <span class="s2">&quot;verbosity&quot;</span><span class="p">:</span> <span class="s2">&quot;low&quot;</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="p">},</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>The SDK normalizes these dictionaries into the corresponding settings objects. Unknown fields in dataclass configuration types defined by the SDK raise <code>TypeError</code>, which helps catch misspelled option names early. Check the parameter's type annotation or API reference to confirm whether a specific boundary accepts a dictionary.</p>
+<h2 id="api-keys-and-clients">API keys and clients</h2>
+<p>By default, the SDK uses the <code>OPENAI_API_KEY</code> environment variable for LLM requests and tracing. The key is resolved when the SDK first creates an OpenAI client (lazy initialization), so set the environment variable before your first model call. If you are unable to set that environment variable before your app starts, you can use the <a class="autorefs autorefs-internal" title="set_default_openai_key" href="../ref/#agents.set_default_openai_key">set_default_openai_key()</a> function to set the key.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_key</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="n">set_default_openai_key</span><span class="p">(</span><span class="s2">&quot;sk-...&quot;</span><span class="p">)</span>
 </span></code></pre></div>
 <p>Alternatively, you can also configure an OpenAI client to be used. By default, the SDK creates an <code>AsyncOpenAI</code> instance, using the API key from the environment variable or the default key set above. You can change this by using the <a class="autorefs autorefs-internal" title="set_default_openai_client" href="../ref/#agents.set_default_openai_client">set_default_openai_client()</a> function.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncOpenAI</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_client</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">custom_client</span> <span class="o">=</span> <span class="n">AsyncOpenAI</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">set_default_openai_client</span><span class="p">(</span><span class="n">custom_client</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncOpenAI</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_client</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">custom_client</span> <span class="o">=</span> <span class="n">AsyncOpenAI</span><span class="p">(</span><span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">)</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">set_default_openai_client</span><span class="p">(</span><span class="n">custom_client</span><span class="p">)</span>
+</span></code></pre></div>
+<p>When you pass an explicit client to <a class="autorefs autorefs-internal" title="OpenAIProvider" href="../ref/models/openai_provider/#agents.models.openai_provider.OpenAIProvider"><code>OpenAIProvider</code></a>, that client owns its connection and account settings. Do not also pass <code>api_key</code>, <code>base_url</code>, <code>websocket_base_url</code>, <code>organization</code>, or <code>project</code> to <code>OpenAIProvider</code>; combining <code>openai_client</code> with any of those arguments raises <a class="autorefs autorefs-internal" title="UserError" href="../ref/exceptions/#agents.exceptions.UserError"><code>UserError</code></a> instead of silently ignoring the duplicate value. Set the intended values when constructing <code>AsyncOpenAI</code>.</p>
+<p>When <code>openai_client</code> is omitted, <code>OpenAIProvider</code> reuses the SDK-wide default client only if <code>api_key</code>, <code>base_url</code>, <code>websocket_base_url</code>, <code>organization</code>, and <code>project</code> are all <code>None</code>. Passing any of those options, including an empty string, makes the provider create its own client and gives the provider option precedence over the SDK-wide default client. Leave every provider option as <code>None</code> when the provider should inherit the client installed by <code>set_default_openai_client()</code>.</p>
+<p><a class="autorefs autorefs-internal" title="OpenAIVoiceModelProvider" href="../ref/voice/models/openai_model_provider/#agents.voice.models.openai_model_provider.OpenAIVoiceModelProvider"><code>OpenAIVoiceModelProvider</code></a> uses the same ownership and precedence rules for <code>api_key</code>, <code>base_url</code>, <code>organization</code>, and <code>project</code>. Its explicit <code>openai_client</code> cannot be combined with any of those four options.</p>
+<h3 id="custom-http-clients-with-openai-v3">Custom HTTP clients with <code>openai</code> v3</h3>
+<p>Version 0.21.0 requires <code>openai&gt;=3.0.0,&lt;4</code>. The default OpenAI provider uses HTTPX2, so most applications do not need to configure an HTTP client directly. If your application passes <code>http_client=</code> to <code>AsyncOpenAI</code>, use HTTPX2 types for the custom client and its transport-facing options:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">httpx2</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncOpenAI</span><span class="p">,</span> <span class="n">DefaultAsyncHttpx2Client</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_client</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="n">http_client</span> <span class="o">=</span> <span class="n">DefaultAsyncHttpx2Client</span><span class="p">(</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>    <span class="n">timeout</span><span class="o">=</span><span class="n">httpx2</span><span class="o">.</span><span class="n">Timeout</span><span class="p">(</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">connect</span><span class="o">=</span><span class="mf">5.0</span><span class="p">),</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="p">)</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="n">custom_client</span> <span class="o">=</span> <span class="n">AsyncOpenAI</span><span class="p">(</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;...&quot;</span><span class="p">,</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>    <span class="n">http_client</span><span class="o">=</span><span class="n">http_client</span><span class="p">,</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">set_default_openai_client</span><span class="p">(</span><span class="n">custom_client</span><span class="p">)</span>
+</span></code></pre></div>
+<p>The same migration applies to custom transports, authentication, event hooks, mock transports, URLs, requests, responses, and transport exception handling. Use their <code>httpx2</code> equivalents. The Agents SDK does not convert arbitrary legacy <code>httpx</code> objects to HTTPX2. The OpenAI Python SDK provides a temporary compatibility path for legacy clients when the application installs <code>httpx</code> explicitly, but new and migrated code should use HTTPX2.</p>
+<p>This OpenAI client boundary is separate from local MCP transport customization. MCP Python SDK v1 uses its own legacy <code>httpx</code> dependency, while MCP Python SDK v2 uses <code>httpx2</code>; see <a href="../mcp/#mcp-python-sdk-v1-and-v2">MCP Python SDK v1 and v2</a>.</p>
+<p>If you prefer environment-based endpoint configuration, the default OpenAI provider also reads <code>OPENAI_BASE_URL</code>. When you enable Responses websocket transport, it also reads <code>OPENAI_WEBSOCKET_BASE_URL</code> for the websocket <code>/responses</code> endpoint.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_BASE_URL</span><span class="o">=</span><span class="s2">&quot;https://your-openai-compatible-endpoint.example/v1&quot;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_WEBSOCKET_BASE_URL</span><span class="o">=</span><span class="s2">&quot;wss://your-openai-compatible-endpoint.example/v1&quot;</span>
 </span></code></pre></div>
 <p>Finally, you can also customize the OpenAI API that is used. By default, we use the OpenAI Responses API. You can override this to use the Chat Completions API by using the <a class="autorefs autorefs-internal" title="set_default_openai_api" href="../ref/#agents.set_default_openai_api">set_default_openai_api()</a> function.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_api</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">set_default_openai_api</span><span class="p">(</span><span class="s2">&quot;chat_completions&quot;</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_api</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">set_default_openai_api</span><span class="p">(</span><span class="s2">&quot;chat_completions&quot;</span><span class="p">)</span>
 </span></code></pre></div>
+<h2 id="openai-provider-defaults">OpenAI provider defaults</h2>
+<p>Providers that use the SDK's OpenAI backend also read SDK-wide defaults when they map model-name strings to models. Use <a class="autorefs autorefs-internal" title="set_default_openai_responses_transport" href="../ref/#agents.set_default_openai_responses_transport"><code>set_default_openai_responses_transport()</code></a> to make OpenAI Responses models use websocket transport by default:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_responses_transport</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">set_default_openai_responses_transport</span><span class="p">(</span><span class="s2">&quot;websocket&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>This affects OpenAI Responses models that result when the default OpenAI provider resolves a model name. For provider-level setup, connection reuse, keepalive options, and custom websocket endpoints, see <a href="../models/#responses-websocket-transport">Responses WebSocket transport</a>.</p>
+<p>If your OpenAI setup expects provider-level agent registration metadata, configure a default harness ID once at startup:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_default_openai_harness</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="n">set_default_openai_harness</span><span class="p">(</span><span class="s2">&quot;your-harness-id&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>You can also pass the full registration object:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAIAgentRegistrationConfig</span><span class="p">,</span> <span class="n">set_default_openai_agent_registration</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="n">set_default_openai_agent_registration</span><span class="p">(</span><span class="n">OpenAIAgentRegistrationConfig</span><span class="p">(</span><span class="n">harness_id</span><span class="o">=</span><span class="s2">&quot;your-harness-id&quot;</span><span class="p">))</span>
+</span></code></pre></div>
+<p>If no SDK default is set, providers that use the SDK's OpenAI backend fall back to the <code>OPENAI_AGENT_HARNESS_ID</code> environment variable. When a harness ID is configured, the SDK adds it to trace metadata as <code>agent_harness_id</code> unless that key is already present in <code>RunConfig.trace_metadata</code>.</p>
 <h2 id="tracing">Tracing</h2>
-<p>Tracing is enabled by default. It uses the OpenAI API keys from the section above by default (i.e. the environment variable or the default key you set). You can specifically set the API key used for tracing by using the <a class="autorefs autorefs-internal" title="set_tracing_export_api_key" href="../ref/#agents.set_tracing_export_api_key"><code>set_tracing_export_api_key</code></a> function.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_tracing_export_api_key</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">set_tracing_export_api_key</span><span class="p">(</span><span class="s2">&quot;sk-...&quot;</span><span class="p">)</span>
+<p>Tracing is enabled by default. By default it uses the same OpenAI API key as your model requests from the section above (that is, the environment variable or the default key you set). You can specifically set the API key used for tracing by using the <a class="autorefs autorefs-internal" title="set_tracing_export_api_key" href="../ref/#agents.set_tracing_export_api_key"><code>set_tracing_export_api_key</code></a> function.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_tracing_export_api_key</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="n">set_tracing_export_api_key</span><span class="p">(</span><span class="s2">&quot;sk-...&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>If your model traffic uses one key or client but tracing should use a different OpenAI key, pass <code>use_for_tracing=False</code> when setting the default key or client, then configure tracing separately. The same pattern works with <a class="autorefs autorefs-internal" title="set_default_openai_key" href="../ref/#agents.set_default_openai_key"><code>set_default_openai_key()</code></a> if you are not using a custom client.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">AsyncOpenAI</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="n">set_default_openai_client</span><span class="p">,</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    <span class="n">set_tracing_export_api_key</span><span class="p">,</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a><span class="p">)</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="n">custom_client</span> <span class="o">=</span> <span class="n">AsyncOpenAI</span><span class="p">(</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>    <span class="n">base_url</span><span class="o">=</span><span class="s2">&quot;https://your-openai-compatible-endpoint.example/v1&quot;</span><span class="p">,</span> <span class="n">api_key</span><span class="o">=</span><span class="s2">&quot;provider-key&quot;</span>
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a><span class="p">)</span>
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">set_default_openai_client</span><span class="p">(</span><span class="n">custom_client</span><span class="p">,</span> <span class="n">use_for_tracing</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a><span class="n">set_tracing_export_api_key</span><span class="p">(</span><span class="s2">&quot;sk-tracing&quot;</span><span class="p">)</span>
+</span></code></pre></div>
+<p>If you need to attribute traces to a specific organization or project when using the default exporter, set these environment variables before your app starts:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_ORG_ID</span><span class="o">=</span><span class="s2">&quot;org_...&quot;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_PROJECT_ID</span><span class="o">=</span><span class="s2">&quot;proj_...&quot;</span>
+</span></code></pre></div>
+<p>You can also set a tracing API key per run without changing the global exporter.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">Runner</span><span class="p">,</span> <span class="n">RunConfig</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="k">await</span> <span class="n">Runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>    <span class="n">agent</span><span class="p">,</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>    <span class="nb">input</span><span class="o">=</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>    <span class="n">run_config</span><span class="o">=</span><span class="n">RunConfig</span><span class="p">(</span><span class="n">tracing</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;api_key&quot;</span><span class="p">:</span> <span class="s2">&quot;sk-tracing-123&quot;</span><span class="p">}),</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="p">)</span>
 </span></code></pre></div>
 <p>You can also disable tracing entirely by using the <a class="autorefs autorefs-internal" title="set_tracing_disabled" href="../ref/#agents.set_tracing_disabled"><code>set_tracing_disabled()</code></a> function.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_tracing_disabled</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">set_tracing_disabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">set_tracing_disabled</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">set_tracing_disabled</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
 </span></code></pre></div>
+<p>If you want to keep tracing enabled but exclude potentially sensitive inputs/outputs from trace payloads, set <a class="autorefs autorefs-internal" title="trace_include_sensitive_data
+
+
+  
+      class-attribute
+      instance-attribute
+  " href="../ref/run/#agents.run.RunConfig.trace_include_sensitive_data"><code>RunConfig.trace_include_sensitive_data</code></a> to <code>False</code>:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">Runner</span><span class="p">,</span> <span class="n">RunConfig</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="k">await</span> <span class="n">Runner</span><span class="o">.</span><span class="n">run</span><span class="p">(</span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>    <span class="n">agent</span><span class="p">,</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="nb">input</span><span class="o">=</span><span class="s2">&quot;Hello&quot;</span><span class="p">,</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a>    <span class="n">run_config</span><span class="o">=</span><span class="n">RunConfig</span><span class="p">(</span><span class="n">trace_include_sensitive_data</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="p">)</span>
+</span></code></pre></div>
+<p>You can also change the default without code by setting this environment variable before your app starts:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_AGENTS_TRACE_INCLUDE_SENSITIVE_DATA</span><span class="o">=</span><span class="m">0</span>
+</span></code></pre></div>
+<p>For full tracing controls, see the <a href="../tracing/">tracing guide</a>.</p>
 <h2 id="debug-logging">Debug logging</h2>
-<p>The SDK has two Python loggers without any handlers set. By default, this means that warnings and errors are sent to <code>stdout</code>, but other logs are suppressed.</p>
+<p>The SDK defines two Python loggers (<code>openai.agents</code> and <code>openai.agents.tracing</code>) and does not attach handlers by default. Logs follow your application's Python logging configuration.</p>
 <p>To enable verbose logging, use the <a class="autorefs autorefs-internal" title="enable_verbose_stdout_logging" href="../ref/#agents.enable_verbose_stdout_logging"><code>enable_verbose_stdout_logging()</code></a> function.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">enable_verbose_stdout_logging</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="n">enable_verbose_stdout_logging</span><span class="p">()</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">agents</span><span class="w"> </span><span class="kn">import</span> <span class="n">enable_verbose_stdout_logging</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="n">enable_verbose_stdout_logging</span><span class="p">()</span>
 </span></code></pre></div>
 <p>Alternatively, you can customize the logs by adding handlers, filters, formatters, etc. You can read more in the <a href="https://docs.python.org/3/howto/logging.html">Python logging guide</a>.</p>
-<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;openai.agents&quot;</span><span class="p">)</span> <span class="c1"># or openai.agents.tracing for the Tracing logger</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># To make all logs show up</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># To make info and above show up</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="c1"># To make warning and above show up</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="c1"># etc</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c1"># You can customize this as needed, but this will output to `stderr` by default</span>
-</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">())</span>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="s2">&quot;openai.agents&quot;</span><span class="p">)</span>  <span class="c1"># or openai.agents.tracing for the Tracing logger</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="c1"># To make all logs show up</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span><span class="p">)</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="c1"># To make info and above show up</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="c1"># To make warning and above show up</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span><span class="p">)</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="c1"># etc</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="c1"># You can customize this as needed, but this will output to `stderr` by default</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="n">logger</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">())</span>
 </span></code></pre></div>
-<h3 id="sensitive-data-in-logs">Sensitive data in logs</h3>
-<p>Certain logs may contain sensitive data (for example, user data). If you want to disable this data from being logged, set the following environment variables.</p>
-<p>To disable logging LLM inputs and outputs:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_AGENTS_DONT_LOG_MODEL_DATA</span><span class="o">=</span><span class="m">1</span>
+<h3 id="sensitive-data-in-logs-and-diagnostics">Sensitive data in logs and diagnostics</h3>
+<p>Certain logs and diagnostic exceptions may contain sensitive data (for example, model or tool inputs and outputs).</p>
+<p>By default, the SDK does <strong>not</strong> log LLM inputs/outputs or tool inputs/outputs. These protections are controlled by:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nv">OPENAI_AGENTS_DONT_LOG_MODEL_DATA</span><span class="o">=</span><span class="m">1</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nv">OPENAI_AGENTS_DONT_LOG_TOOL_DATA</span><span class="o">=</span><span class="m">1</span>
 </span></code></pre></div>
-<p>To disable logging tool inputs and outputs:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_AGENTS_DONT_LOG_TOOL_DATA</span><span class="o">=</span><span class="m">1</span>
+<p>If you need to include this data temporarily for debugging, set either variable to <code>0</code> (or <code>false</code>) before your app starts:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_AGENTS_DONT_LOG_MODEL_DATA</span><span class="o">=</span><span class="m">0</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_AGENTS_DONT_LOG_TOOL_DATA</span><span class="o">=</span><span class="m">0</span>
 </span></code></pre></div>
+<p>These flags also control whether affected failures retain payload-bearing diagnostic details. For example, with tool-data redaction enabled, invalid arguments for a <code>FunctionTool</code> raise a generic <code>ModelBehaviorError</code> without chaining the underlying validation error. Setting either variable to <code>0</code> can expose raw model or tool data in logs, exception messages, exception chains, and other diagnostic context, so enable it only in a controlled development environment.</p>
 
 
 
@@ -2955,10 +5347,11 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.select", "navigation.path", "navigation.sections", "navigation.expand", "content.code.annotate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["content.code.copy", "content.code.select", "navigation.path", "navigation.sections", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
